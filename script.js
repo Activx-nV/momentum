@@ -357,7 +357,6 @@ function checkLocalStorageName() {
 
 
 function checkLocalStorageFocus() {
-  console.log();
   if (localStorage.getItem('focus') == "" || focus.innerHTML == '<br>') {
     localStorage.setItem('focus', '[Enter Focus]');
     location.reload();
