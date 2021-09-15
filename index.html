@@ -1,68 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Megrim&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <div class="warning">
+      <button
+        class="
+          reset-name
+          buttons
+          animate__animated animate__fadeInLeft
+          delay-2s
+        "
+      >
+        RESET NAME
+      </button>
+      <button
+        class="
+          reset-focus
+          buttons
+          animate__animated animate__fadeInRight
+          delay-2s
+        "
+      >
+        RESET FOCUS
+      </button>
+    </div>
+    <div class="change-fontColor">
+      <label for="favcolor">Select your favorite color for a font:</label>
+      <input type="color" id="favcolor" name="favcolor" value="#000000" />
+    </div>
+    <button
+      class="
+        change-bg-button
+        animate__animated animate__lightSpeedInRight
+        delay-2s
+      "
+    >
+      Change the background
+    </button>
+    <div class="weather-block">
+      <i class="weather-icon owf"></i>
+      <div class="temperature"></div>
+      <div class="humidity"></div>
+      <div class="wind-speed"></div>
+      <div class="city" contenteditable="true">Tallinn</div>
+      <div class="weather-description"></div>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="container">
+      <time
+        class="time animate__animated animate__zoomIn delay-2s"
+        id="time"
+      ></time>
+      <span class="date"></span>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="css/owfont-regular.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Momentum</title>
-</head>
+      <h1>
+        <span class="greeting" id="greeting"></span>
+        <span class="name" id="name" contenteditable="true"></span>
+      </h1>
 
-<body>
-  <!-- IF NAME OR FOCUS AREAS WERE EMPTY AFTER PRESSING ENTER, JUST WAIT FEW SECS. THEY WILL APPEAR
-    AGAIN. THESE AREAS SHOULD CLEAR AUTOMATICALLY ON CLICK, SO THERE IS NO NEED TO DELETE THEM MANUALLY USING
-    BACKSPACE,
-    WHEN THEY HAVE A [DEFAULT NAME]
-    :) -->
-  <div class="warning">
-    <button class="reset-name buttons animate__animated animate__fadeInLeft delay-2s">RESET NAME</button>
-    <button class="reset-focus buttons animate__animated animate__fadeInRight delay-2s">RESET FOCUS</button>
-  </div>
+      <h2>What Is Your Focus For Today?</h2>
+      <h2 class="focus" id="focus" contenteditable="true"></h2>
+    </div>
 
-  <div class="change-bg"><button class="change-bg-button animate__animated animate__lightSpeedInRight delay-2s">change
-      the
-      background</button></div>
-  <div class="weather-block">
-    <i class="weather-icon owf"></i>
-    <div class="temperature"></div>
-    <div class="humidity"></div>
-    <div class="wind-speed"></div>
-    <div class="city" contenteditable="true">Tallinn</div>
-    <div class="weather-description"></div>
-  </div>
-  <div class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <div class="container"><time class="time animate__animated animate__zoomIn delay-2s" id="time"></time>
-    <span class="date"></span>
+    <figure class="quote">
+      <blockquote>
+        You were not born a winner, and you were not born a loser. You are what
+        you make yourself be.
+      </blockquote>
+      <figcaption>Lou Holtz</figcaption>
+      <div class="btn-quoteChange">excogitate</div>
+    </figure>
 
-    <h1>
-      <span class="greeting" id="greeting"></span>
-      <span class="name" id="name" contenteditable="true"></span>
-    </h1>
-
-    <h2>What Is Your Focus For Today?</h2>
-    <h2 class="focus" id="focus" contenteditable="true"></h2>
-  </div>
-
-  <figure class="quote">
-    <blockquote>
-      You were not born a winner, and you were not born a loser. You are what you make yourself be.
-    </blockquote>
-    <figcaption>
-      Lou Holtz
-    </figcaption>
-    <div class="btn-quoteChange">excogitate</div>
-  </figure>
-
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
